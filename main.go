@@ -10,7 +10,20 @@ import (
 )
 
 func main() {
-	words := []string{"apple", "banana", "grape", "orange", "pineapple"}
+	// テキストファイルから単語を読み込む
+	wordsFile, err := os.Open("words.txt")
+	if err != nil {
+		fmt.Println("単語ファイルを開けませんでした。")
+		return
+	}
+	defer wordsFile.Close()
+
+	var words []string
+	scanner := bufio.NewScanner(wordsFile)
+	for scanner.Scan() {
+		words = append(words, scanner.Text())
+	}
+
 	reader := bufio.NewReader(os.Stdin)
 
 	score := 0
