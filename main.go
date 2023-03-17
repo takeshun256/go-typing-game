@@ -6,6 +6,7 @@ import (
 	"os"
 	"strings"
 	"time"
+	"math/rand"
 )
 
 func main() {
