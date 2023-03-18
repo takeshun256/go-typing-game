@@ -2,6 +2,9 @@
 
 This is a simple typing game written in Go.
 
+<img width="929" alt="image" src="https://user-images.githubusercontent.com/75155218/226076680-ed54be3c-593a-44b4-bbb4-5a56728e3022.png">
+
+
 ## Requirements
 
 ### Docker
