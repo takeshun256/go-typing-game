@@ -43,7 +43,7 @@ docker-compose -f docker-compose.prod.yml down
 
 1. Clone the repository:
 
-``bash
+```bash
 git clone https://github.com/<your-username>/go-typing-game.git
 cd go-typing-game
 ```
