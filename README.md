@@ -72,3 +72,7 @@ The game will randomly select a word from a list of words and prompt you to type
 If you type the word correctly, you will score one point. If you make a mistake, no points will be awarded. After 60 seconds, the game will end and your score will be displayed.
 
 Good luck!
+
+## Contributing
+
+Thank you for your interest in contributing to this project! As this is a very small project, there may not be any specific guidelines for contributions. However, if you have any suggestions or improvements, please feel free to open an issue or a pull request. We appreciate any and all contributions to make this project better!
