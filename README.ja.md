@@ -2,6 +2,9 @@
 
 これはGo言語で書かれたシンプルなタイピングゲームです。
 
+<img width="929" alt="image" src="https://user-images.githubusercontent.com/75155218/226076825-1d71fd43-3412-4600-9dd8-9f9d2b31c775.png">
+
+
 ## 必要なもの
 
 ### Docker
