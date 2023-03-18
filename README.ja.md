@@ -40,7 +40,7 @@ docker-compose -f docker-compose.prod.yml down
 ```
 
 
-## Local
+### Local
 
 1. リポジトリをクローンします:
 

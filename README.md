@@ -39,7 +39,7 @@ dokcer-compose -f docker-compose.prod.yml exec app go run main.go
 docker-compose -f docker-compose.prod.yml down
 ```
 
-## Local
+### Local
 
 1. Clone the repository:
 
