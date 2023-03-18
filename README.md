@@ -2,6 +2,8 @@
 
 This is a simple typing game written in Go.
 
+Play locally or with Docker and test your skills by correctly typing as many randomly selected words as you can. Your score is displayed at the end of the game. Enjoy!
+
 <img width="929" alt="image" src="https://user-images.githubusercontent.com/75155218/226076680-ed54be3c-593a-44b4-bbb4-5a56728e3022.png">
 
 
