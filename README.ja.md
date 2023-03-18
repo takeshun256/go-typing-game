@@ -27,7 +27,7 @@ cd go-typing-game
 2. Dockerイメージをビルドし、コンテナを起動します:
 
 ```bash
-docker-compose -f docker-compose.yml up -d --build
+docker-compose -f docker-compose.prod.yml up -d --build
 ```
 
 3. コンテナに入り、ゲームを開始します:
@@ -48,7 +48,7 @@ docker-compose -f docker-compose.prod.yml down
 1. リポジトリをクローンします:
 
 ```bash
-git clone https://github.com/<your-username>/go-typing-game.git
+git clone https://github.com/takeshun256/go-typing-game.git
 cd go-typing-game
 ```
 

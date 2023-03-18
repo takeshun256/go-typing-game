@@ -29,13 +29,13 @@ cd go-typing-game
 2. Build the Docker image and start the container:
 
 ```bash
-docker-compose -f docker-compose.yml up -d --build
+docker-compose -f docker-compose.prod.yml up -d --build
 ```
 
 3. Enter the container and Start the game.
 
 ```bash
-dokcer-compose -f docker-compose.prod.yml exec app go run main.go
+docker-compose -f docker-compose.prod.yml exec app go run main.go
 ```
 
 5. Stop and remove the Docker container:
@@ -49,7 +49,7 @@ docker-compose -f docker-compose.prod.yml down
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/go-typing-game.git
+git clone https://github.com/takeshun256/go-typing-game.git
 cd go-typing-game
 ```
 
