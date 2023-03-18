@@ -6,8 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     volumes:
-      - .:/app
+      - .:/go/src
     tty: true
     stdin_open: true
-
 
