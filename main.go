@@ -3,17 +3,17 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math/rand"
 	"os"
 	"strings"
 	"time"
-	"math/rand"
 )
 
 func main() {
-	// テキストファイルから単語を読み込む
+	// Read words from text file
 	wordsFile, err := os.Open("words.txt")
 	if err != nil {
-		fmt.Println("単語ファイルを開けませんでした。")
+		fmt.Println("Failed to open word file.")
 		return
 	}
 	defer wordsFile.Close()
@@ -29,12 +29,12 @@ func main() {
 	score := 0
 	timer := time.NewTimer(60 * time.Second)
 
-	fmt.Println("タイピングゲームを開始します。60秒間でどれだけ正確に入力できるか挑戦してください！")
+	fmt.Println("Starting typing game. Try to accurately type as many words as possible within 60 seconds.")
 
 gameLoop:
 	for {
 		word := words[rand.Intn(len(words))]
-		fmt.Printf("タイプしてください: %s\n", word)
+		fmt.Printf("Type this word: %s\n", word)
 
 		inputCh := make(chan string)
 		go func() {
@@ -48,13 +48,13 @@ gameLoop:
 		case input := <-inputCh:
 			if input == word {
 				score++
-				fmt.Println("正解！")
+				fmt.Println("Correct!")
 			} else {
-				fmt.Println("不正解...")
+				fmt.Println("Incorrect...")
 			}
 		}
 	}
 
-	fmt.Printf("時間切れ！あなたのスコアは %d 点です。\n", score)
+	fmt.Printf("Time's up! Your score is %d points.\n", score)
 }
 
