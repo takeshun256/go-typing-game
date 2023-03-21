@@ -1,4 +1,4 @@
-*
-!*/
-!*.*
+# Ignore the binary executable file
+main
+go-typing-game
 
