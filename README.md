@@ -29,19 +29,19 @@ cd go-typing-game
 2. Build the Docker image and start the container:
 
 ```bash
-docker-compose -f docker-compose.prod.yml up -d --build
+make docker-build
 ```
 
 3. Enter the container and Start the game.
 
 ```bash
-docker-compose -f docker-compose.prod.yml exec app go run main.go
+make docker-run
 ```
 
 5. Stop and remove the Docker container:
 
 ```bash
-docker-compose -f docker-compose.prod.yml down
+make docker-clean
 ```
 
 ### Local
@@ -56,14 +56,19 @@ cd go-typing-game
 2. Run the game:
 
 ```bash
-go run main.go
+make run
 ```
 
 3. or Build and Run the game:
 
 ```bash
-go build main.go
+make build
 ./main
+```
+
+4. clean the binary executable file
+```bash
+make clean
 ```
 
 ## How to Play
