@@ -29,19 +29,19 @@ cd go-typing-game
 2. Dockerイメージをビルドし、コンテナを起動します:
 
 ```bash
-docker-compose -f docker-compose.prod.yml up -d --build
+make docker-build
 ```
 
 3. コンテナに入り、ゲームを開始します:
 
 ```bash
-docker-compose -f docker-compose.prod.yml exec app go run main.go
+make docker-run
 ```
 
 4. Dockerコンテナを停止し、削除します:
 
 ```bash
-docker-compose -f docker-compose.prod.yml down
+make docker-clean
 ```
 
 
@@ -57,14 +57,20 @@ cd go-typing-game
 2. ゲームを実行します:
 
 ```bash
-go run main.go
+make run
 ```
 
 3. または、ビルドしてゲームを実行します:
 
 ```bash
-go build main.go
+make build
 ./main
+```
+
+4. 実行ファイル(main)を削除
+
+```bash
+make clean
 ```
 
 
